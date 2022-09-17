@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class=" fixed text-white text-sm ml-2 mt-1  select-none ">
+        <span >Score: </span>
+        <span class="scoreEl">0</span>
+        
+    </div>
+      <div id="modal" class="fixed inset-0 flex justify-center items-center   ">
+      <div class="bg-white max-w-md w-full text-center p-6">
+        <h1 id="bigScore" class=" text-4xl font-bold leading-none">0</h1>
+        <p class=" text-sm text-gray-700">Points</p>
+        <div>
+          <button id="startBtn" class=" bg-blue-500 text-sm text-white w-full py-3 rounded-full my-4">Start game</button>
+        </div>
+      </div>
+    </div>
+    <canvas></canvas>
+    
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
